@@ -1,0 +1,222 @@
+    #wrap {
+        width: 990px;
+        height: 1812px;
+        margin: auto;
+    }
+    
+    #header {
+        width: 990px;
+        height: 325px;
+        background: #dddddd;
+    }
+    
+    #contents {
+        width: 990px;
+        height: 1329px;
+        background: #dddddd;
+    }
+    
+    #footer {
+        width: 990px;
+        height: 160px;
+        background: #dddddd;
+        clear: both;
+    }
+    /* #header */
+    
+    #header>.container {
+        width: 990px;
+        height: 325px;
+        background: #bbbbbb;
+    }
+    
+    #header>.container>.header>.header-menu {
+        width: 220px;
+        height: 39px;
+        float: right;
+        text-align: center;
+        padding-top: 13px;
+        margin-bottom: 34px;
+        background: #999;
+    }
+    
+    #header>.container>.header>.header-menu>a {
+        float: left;
+        width: 64px;
+        height: 14px;
+        font-size: 10px;
+        background: #555;
+    }
+    
+    #header>.container>.header>.header-menu>a:nth-child(2) {
+        margin: 0 14px;
+    }
+    
+    #header>.container>.header>.header-title {
+        width: 990px;
+        height: 145px;
+        clear: both;
+        text-align: center;
+        padding-top: 30px;
+        background: #888;
+    }
+    
+    #header>.container>.header>.header-title>h1 {
+        width: 790px;
+        height: 54px;
+        margin: 0 auto;
+        text-align: center;
+        background: #555;
+    }
+    
+    #header>.container>.header>.header-title>a {
+        width: 127px;
+        height: 37px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        background: #555;
+    }
+    /* #contents */
+    
+    #contents>#cont_nav {
+        width: 990px;
+        height: 258px;
+        background: #ccc;
+    }
+    
+    #contents>#cont_nav>.container {
+        width: 990px;
+        height: 228px;
+        padding-top: 30px;
+        background: #bbb;
+    }
+    
+    #contents>#cont_nav>.container>.nav {
+        width: 990px;
+        height: 167px;
+        background: #888;
+    }
+    
+    #contents>#cont_nav>.container>.nav div {
+        width: 390px;
+        height: 167px;
+        float: left;
+        background: #555;
+    }
+    
+    #contents>#cont_nav>.container>.nav div:last-child {
+        width: 210px;
+    }
+    
+    #contents>#cont_tit {
+        width: 990px;
+        height: 70px;
+        background: #ccc;
+        margin-bottom: 33px;
+    }
+    
+    #contents>#cont_tit>.container {
+        width: 990px;
+        height: 70px;
+        background: #bbb;
+    }
+    
+    #contents>#cont_tit>.container>div {
+        width: 990px;
+        height: 107px;
+        background: #888;
+    }
+    
+    #contents>#cont_ban {
+        width: 990px;
+        height: 212px;
+        background: #ccc;
+    }
+    
+    #contents>#cont_ban>.container {
+        width: 953px;
+        height: 121px;
+        margin: auto;
+        background: #ccc;
+    }
+    
+    #contents>#cont_ban>.container>div {
+        width: 296px;
+        height: 121px;
+        margin-right: 32px;
+        float: left;
+        background: #888;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    
+    #contents>#cont_ban>.container>div:last-child {
+        margin-right: 0px;
+    }
+    
+    #contents>#cont_cont {
+        width: 990px;
+        height: 817px;
+        background: #ccc;
+    }
+    
+    #contents>#cont_cont>.container {
+        width: 990px;
+        height: 817px;
+        margin: 29px auto 62px;
+        background: #ddd;
+    }
+    
+    #contents>#cont_cont>.container>div {
+        width: 319px;
+        height: 363px;
+        margin-right: 16px;
+        margin-bottom: 29px;
+        float: left;
+        background: #888;
+    }
+    
+    #contents>#cont_cont>.container>div:nth-child(3n) {
+        margin-right: 0px;
+    }
+    
+    #contents>#cont_cont>.container>div:nth-child(4),
+    #contents>#cont_cont>.container>div:nth-child(5),
+    #contents>#cont_cont>.container>div:nth-child(6) {
+        margin-bottom: 0px;
+    }
+    /* #footer */
+    
+    #footer>.container {
+        width: 990px;
+        height: 170px;
+        background: #bbb;
+    }
+    
+    #footer>.container>.footer {
+        width: 990px;
+        height: 170px;
+        padding-top: 50px;
+        background: #ddd;
+    }
+    
+    #footer>.container>.footer>div:nth-child(1) {
+        width: 990px;
+        height: 20px;
+        background: #555;
+    }
+    
+    #footer>.container>.footer>div:nth-child(2) {
+        width: 990px;
+        height: 40px;
+        margin-top: 20px;
+        background: #555;
+    }
+    
+    #footer>.container>.footer>div:nth-child(3) {
+        width: 990px;
+        height: 60px;
+        margin-top: 10px;
+        background: #555;
+    }
