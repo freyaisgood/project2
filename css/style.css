@@ -248,7 +248,9 @@
     }
     
     .cont .col1,
-    .cont .col2 {
+    .cont .col2,
+    .cont .col4,
+    .cont .col5 {
         border-right: 1px solid #c8c8c8;
     }
     
@@ -578,6 +580,11 @@
         position: absolute;
         top: 130px;
         left: 10px;
+        display: none;
+    }
+    
+    .tab_menu>ul>li.on>ul {
+        display: block;
     }
     
     .tab_menu>ul>li>ul>li {
@@ -617,7 +624,7 @@
     .notice4 h4 {
         color: #72377c;
         font-size: 16px;
-        height: 30px;
+        height: 20px;
         border-bottom: 1px solid #d0d0d0;
         margin-bottom: 10px;
         padding: 8px;
@@ -626,4 +633,262 @@
     .notice4 h4 em {
         color: #0093bd;
         font-size: 16px;
+    }
+    
+    .notice4 a.more {
+        position: absolute;
+        right: 14px;
+        top: 15px;
+        font-size: 11px;
+    }
+    
+    .notice4 ul {
+        padding: 10px;
+    }
+    
+    .notice4 ul li {
+        height: 22px;
+    }
+    
+    .notice4 ul li a {
+        float: left;
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .notice4 ul li span {
+        float: left;
+    }
+    /* 로그인 */
+    
+    #login-wrap fieldset {
+        font-size: 12px;
+        border-bottom: 1px solid #d0d0d0;
+        margin-bottom: 15px;
+    }
+    
+    #login-wrap .login_header {
+        overflow: hidden;
+    }
+    
+    #login-wrap .login_header .lh_check,
+    .lh_ip {
+        float: left;
+    }
+    
+    #login-wrap .login_header .lh_check>* {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+    
+    #login-wrap .login_header .lh_ip {
+        margin-left: 10px;
+    }
+    
+    #login-wrap .login_header .lh_ip>* {
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    #login-wrap .login_header .lh_ip>em {
+        color: #18bacb;
+        text-decoration: underline;
+    }
+    
+    #login-wrap .login_content {
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+    
+    #login-wrap .login_content .lc_text,
+    .lc_btn {
+        float: left;
+    }
+    
+    #login-wrap .login_content .lc_text {
+        width: 70%;
+    }
+    
+    #login-wrap .login_content .lc_text input {
+        padding-left: 5px;
+    }
+    
+    #login-wrap .login_content .lc_text>* {
+        width: 90%;
+    }
+    
+    #login-wrap .login_content input[id="uid"] {
+        margin-bottom: 4px;
+    }
+    
+    #login-wrap .login_content .lc_btn {
+        width: 30%;
+        height: 50px;
+        background: #c4c4c4;
+        cursor: pointer;
+    }
+    
+    #login-wrap .login_footer {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    
+    #login-wrap .login_footer li {
+        float: left;
+    }
+    
+    #login-wrap .login_footer li:last-child {
+        margin-left: 4px;
+    }
+    /* 팝업 */
+    
+    .popup h4 {
+        font-size: 14px;
+        color: #0093bd;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .popup ul {
+        overflow: hidden;
+    }
+    
+    .popup ul li {
+        float: left;
+        width: 30%;
+    }
+    
+    .popup ul li img {
+        width: 100%;
+    }
+    
+    .popup ul li:nth-child(2) {
+        margin: 0 5%;
+    }
+    /* 갤러리 */
+    
+    .gallery {
+        border: 1px solid #d0d0d0;
+        position: relative;
+    }
+    
+    .gallery h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0093bd;
+        padding: 10px;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    
+    .gallery .gallery_btn {
+        position: absolute;
+        overflow: hidden;
+        top: 10px;
+        right: 8px;
+    }
+    
+    .gallery .gallery_btn button {
+        width: 23px;
+        height: 23px;
+        float: left;
+        background: url(../img/icon.png) no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon1 {
+        background-position-x: -150px;
+        background-position-y: -120px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon2 {
+        background-position-x: -150px;
+        background-position-y: -143px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon3 {
+        background-position-x: -150px;
+        background-position-y: -166px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon4 {
+        background-position-x: -150px;
+        background-position-y: -189px;
+    }
+    /* .gallery .gallery_btn button.gb_icon1:hover {
+        background-position-x: -173px;
+        background-position-y: -120px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon2:hover {
+        background-position-x: -173px;
+        background-position-y: -143px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon3:hover {
+        background-position-x: -173px;
+        background-position-y: -166px;
+    }
+    
+    .gallery .gallery_btn button.gb_icon4:hover {
+        background-position-x: -173px;
+        background-position-y: -189px;
+    } */
+    
+    .gallery .gallery_img {
+        position: relative;
+        width: 297px;
+        height: 215px;
+    }
+    
+    .gallery .gallery_img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96%;
+        height: 96%;
+    }
+    /* footer */
+    
+    .footer {
+        width: 990px;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer>ul {
+        overflow: hidden;
+    }
+    
+    .footer li {
+        float: left;
+        width: 14%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        position: relative;
+    }
+    
+    .footer li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #d0d0d0;
+        width: 1px;
+        height: 10px;
+        top: 16px;
+    }
+    
+    .footer li:first-child:after {
+        width: 0;
+    }
+    
+    .footer adress {
+        height: 40px;
+        line-height: 40px;
     }
