@@ -15,17 +15,22 @@
     <meta property="og:description" content="FREYAISGOOD" />
 
     <title>웹표준을 준수한 사이트</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/lightgallery.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/wireframe.css"> -->
     <!-- wedfont -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <!-- script -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         jQuery(document).ready(function() {
             $('.tit .btn').click(function() {
@@ -201,7 +206,7 @@
             </div>
             <div id="cont_ban">
                 <div class="container">
-                    <div class="swiper-container">
+                    <div class="swiper-container main_banner">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
@@ -230,46 +235,14 @@
                             <div class="swiper-slide">
                                 <a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
                             </div>
-
                         </div>
+
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <!-- //class="swiper-container" -->
-                    <!-- <div class="ban">
-                        <div class="ban_container">
-                            <div>
-                                <a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
-                            </div>
-                            <div>
-                                <a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <!-- //id="cont_ban" -->
@@ -505,7 +478,7 @@
                             <div class="tab_menu">
                                 <h4 class="ir_so">탭메뉴</h4>
                                 <ul>
-                                    <li class="on">
+                                    <li>
                                         <a href="#">공지사항1</a>
                                         <ul>
                                             <li><a href="#">첫번째 공지사항 탭메뉴 테스트 목록입니다. 첫번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
@@ -516,9 +489,9 @@
                                     <li>
                                         <a href="#">공지사항2</a>
                                         <ul>
-                                            <li><a href="#">두번쨰 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
-                                            <li><a href="#">두번쨰 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
-                                            <li><a href="#">두번쨰 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두번째 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두번째 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두번째 공지사항 탭메뉴 테스트 목록입니다. 두번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -565,21 +538,23 @@
                                     <button class="gb_icon3 prev"><span class="ir_pm">Prev</span></button>
                                     <button class="gb_icon4 next"><span class="ir_pm">Next</span></button>
                                 </div>
-                                <div class="gallery_img">
-                                    <div>
-                                        <a href="#"><img src="img/gallery01.jpg" alt="갤러리1"></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="img/gallery02.jpg" alt="갤러리2"></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="img/gallery03.jpg" alt="갤러리3"></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="img/gallery04.jpg" alt="갤러리4"></a>
-                                    </div>
-                                    <div>
-                                        <a href="#"><img src="img/gallery05.jpg" alt="갤러리5"></a>
+                                <div class="swiper-container gallery_img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="img/gallery01.jpg" alt="갤러리1"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="img/gallery02.jpg" alt="갤러리2"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="img/gallery03.jpg" alt="갤러리3"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="img/gallery04.jpg" alt="갤러리4"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="img/gallery05.jpg" alt="갤러리5"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -609,11 +584,11 @@
                         </ul>
                         <address>Copyright&copy;greenraining_.dothome.co.kr All Right Reserved</address>
                         <div class="w3c ">
-                            <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+                            <a href="http://validator.kldp.org/check?uri=referer" onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img src="http://validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
                             </p>
                             <p>
                                 <a href="http://css-validator.kldp.org/check/referer">
-                                    <img style="border:0;width:80px;height:15px" src="//css-validator.kldp.org/images/validate/css-blue" alt="올바른 CSS입니다!" />
+                                    <img style="border:0;width:80px;height:15px" src="http://css-validator.kldp.org/images/validate/css-blue" alt="올바른 CSS입니다!" />
                                 </a>
                             </p>
 
@@ -624,11 +599,22 @@
         </div>
         <!-- //#footer -->
     </div>
+    <!-- 팝업 -->
+    <div class="layer_popup">
+        <i class="fas fa-times"></i>
+        <img src="img/webstandard1.jpg" alt="웹표준 준수 안내 팝업창입니다.">
+    </div>
+    <!-- 모달팝업 -->
+    <div class="modal_popup">
+        <div class="bg100">
+            <div class="popup"></div>
+        </div>
+    </div>
+    <!-- 스크립트 -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var main_banner = new Swiper('.swiper-container.main_banner', {
             slidesPerView: 3, //한화면에 보여줄 이미지 갯수
-            spaceBetween: 30, //슬라이드 사이 여백
-            centeredSlides: true, //슬라이드 가로 중앙 배치
+            centeredSlides: false, //슬라이드 가로 중앙 배치
             autoplay: { //자동재생
                 delay: 2500, //정지시간(ms)
                 disableOnInteraction: false, //false 로 설정하면 스와이프 후 자동재생이 비활성화 안됨
@@ -641,6 +627,25 @@
                 nextEl: '.swiper-button-next', //next 버튼이될 요소명
                 prevEl: '.swiper-button-prev', //prev 버튼이될 요소명
             },
+        });
+
+        var gallery = new Swiper('.gallery_img', {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.gb_icon4.next',
+                prevEl: '.gb_icon3.prev'
+            }
+        })
+        $('.pause').click(function() {
+            gallery.autoplay.stop();
+        });
+        $('.play').click(function() {
+            gallery.autoplay.start();
+
         });
     </script>
 

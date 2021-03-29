@@ -202,42 +202,12 @@
 }
 
 
-/* 슬릭배너 */
+/* 배너 */
 
 .ban {
     position: relative;
     padding: 24px 0px 40px;
 }
-
-
-/* .ban .slick-prev {
-        position: absolute;
-        left: -80px;
-        top: 80px;
-        width: 43px;
-        height: 43px;
-        background: url(../img/icon.png) no-repeat -150px 0;
-        text-indent: -9999px;
-    }
-    
-    .ban .slick-next {
-        position: absolute;
-        right: -80px;
-        top: 80px;
-        width: 43px;
-        height: 43px;
-        background: url(../img/icon.png) no-repeat -150px -43px;
-        text-indent: -9999px;
-    }
-    
-    .ban .slick-prev:hover {
-        background-position: -193px 0;
-    }
-    
-    .ban .slick-next:hover {
-        background-position: -193px -43px;
-    }
-     */
 
 .ban img {
     border: 4px solid #dcdcdc;
@@ -255,6 +225,25 @@
 .ban .ban_container div {
     float: left;
     width: 330px;
+}
+
+
+/* 스와이퍼 수정 */
+
+.swiper-container.main_banner {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-button-next::after {
+    font-size: 20px;
 }
 
 
@@ -636,12 +625,22 @@
     text-indent: 10px;
 }
 
-.tab_menu>ul>li:hover {
+
+/* .tab_menu>ul>li:hover {
     background: #18bacb;
     border-bottom: none;
 }
 
 .tab_menu>ul>li:hover>a {
+    color: #fff;
+} */
+
+.tab_menu>ul>li.on {
+    background: #18bacb;
+    border-bottom: none;
+}
+
+.tab_menu>ul>li.on>a {
     color: #fff;
 }
 
@@ -814,6 +813,69 @@
 
 .popup ul li:nth-child(2) {
     margin: 0 5%;
+}
+
+
+/* 팝업추가 */
+
+.layer_popup {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 999;
+    width: 700px;
+    height: 500px;
+    border: 10px solid #599fb3;
+    box-shadow: 2px 2px 3px #000;
+    background: #dfdfdf;
+    border-radius: 10px;
+    display: none;
+}
+
+.layer_popup img {
+    width: 100%;
+}
+
+.layer_popup i {
+    font-size: 1em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    background: #599fb3;
+    padding: 4px;
+    font-style: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal_popup {
+    display: none;
+}
+
+
+/* 오버레이 효과 */
+
+.modal_popup .bg100 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.modal_popup .popup {
+    width: 500px;
+    height: 350px;
+    background: url(../img/webstandard2.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 100px;
+    left: 100px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .8);
 }
 
 
