@@ -15,6 +15,8 @@
     <meta property="og:description" content="FREYAISGOOD" />
 
     <title>우리은행</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -25,10 +27,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
+    <div id="skip">
+        <a href="#menu" rel="bookmark">전체 메뉴 바로가기</a>
+        <a href="#quick" rel="bookmark">퀵메뉴 바로가기</a>
+        <a href="#cont_menu" rel="bookmark">컨텐츠 영역 바로가기</a>
+        <a href="#service" rel="bookmark">서비스 영역 바로가기</a>
+    </div>
     <div id="wrap">
         <header>
             <div id="top">
@@ -52,131 +66,134 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div id="top_menu">
-                        <h1 id="logo">
-                            <a href="#"><img src="images/logo.png" alt="로고"></a>
-                        </h1>
-                        <div id="login_button">
-                            <div class="login">
-                                <span>로그인</span>
-                                <div class="login_hover">
-                                    <a href="#">개인</a>
-                                    <a href="#">기업</a>
-                                    <div class="block3"></div>
+                        <div class="container">
+                            <h1 id="logo">
+                                <a href="#"><img src="images/logo.png" alt="로고"></a>
+                            </h1>
+                            <div id="login_button">
+                                <div class="login">
+                                    <span>로그인</span>
+                                    <div class="login_hover">
+                                        <a href="#">개인</a>
+                                        <a href="#">기업</a>
+                                        <div class="block3"></div>
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <span><a href="#"> 인증센터</a></span>
+                                    <div class="login_hover">
+                                        <a href="#">개인</a>
+                                        <a href="#">기업</a>
+                                        <div class="block3"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="center">
-                                <span><a href="#"> 인증센터</a></span>
-                                <div class="login_hover">
-                                    <a href="#">개인</a>
-                                    <a href="#">기업</a>
-                                    <div class="block3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="menu">
-                            <ul>
-                                <li class="menu_fl">
-                                    <h2><a href="#">개인</a></h2>
-                                    <div class="clear"></div>
-                                    <div class="arrow"></div>
-                                    <ul class="menu_list">
-                                        <li class="m_1"><a href="#">개인뱅킹</a></li>
-                                        <li><a href="#">조회</a></li>
-                                        <li><a href="#">이체</a></li>
-                                        <li><a href="#">오픈뱅킹</a></li>
-                                        <li><a href="#">공과금</a></li>
-                                        <li><a href="#">예금/신탁</a></li>
-                                        <li><a href="#">펀드</a></li>
-                                        <li><a href="#">보험</a></li>
-                                        <li><a href="#">대출</a></li>
-                                        <li><a href="#">외환/골드</a></li>
-                                        <li><a href="#">퇴직연금</a></li>
-                                        <li><a href="#">뱅킹관리</a></li>
-                                        <li><a href="#">ISA</a></li>
 
-                                    </ul>
-                                </li>
-                                <li class="menu_fl">
-                                    <h2><a href="#">기업</a></h2>
-                                    <div class="arrow"></div>
-                                    <div class="clear"></div>
-                                    <ul class="menu_list">
-                                        <li class="m_1"><a href="#">개인뱅킹</a></li>
-                                        <li><a href="#">조회</a></li>
-                                        <li><a href="#">이체</a></li>
-                                        <li><a href="#">공과금</a></li>
-                                        <li><a href="#">전자결제</a></li>
-                                        <li><a href="#">수표어음</a></li>
-                                        <li><a href="#">자금관리</a></li>
-                                        <li><a href="#">예금/신탁</a></li>
-                                        <li><a href="#">대출</a></li>
-                                        <li><a href="#">펀드/보험</a></li>
-                                        <li><a href="#">외환</a></li>
-                                        <li><a href="#">퇴직연금</a></li>
-                                        <li><a href="#">뱅킹관리</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu_fl">
-                                    <h2><a href="#">자산관리</a></h2>
-                                    <div class="arrow"></div>
-                                    <div class="clear"></div>
-                                    <ul class="menu_list">
-                                        <li class="m_1"><a href="#">자산관리</a></li>
-                                        <li><a href="#">로보/전문가설계</a></li>
-                                        <li><a href="#">펀드마켓</a></li>
-                                        <li><a href="#">은퇴설계</a></li>
-                                        <li><a href="#">재무설계</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu_fl">
-                                    <h2><a href="#">금융상품</a></h2>
-                                    <div class="arrow"></div>
-                                    <div class="clear"></div>
-                                    <ul class="menu_list">
-                                        <li class="m_1"><a href="#">금융상품</a></li>
-                                        <li><a href="#">추천상품</a></li>
-                                        <li><a href="#">예금</a></li>
-                                        <li><a href="#">펀드</a></li>
-                                        <li><a href="#">대출</a></li>
-                                        <li><a href="#">외환</a></li>
-                                        <li><a href="#">골드</a></li>
-                                        <li><a href="#">신탁</a></li>
-                                        <li><a href="#">보험</a></li>
-                                        <li><a href="#">퇴직연금</a></li>
-                                        <li><a href="#">시니어플러스 은퇴설계</a></li>
-                                        <li><a href="#">ISA</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu_fl">
-                                    <h2><a href="#">카드</a></h2>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="all_menu">
-                            <a href="#">전체메뉴</a>
-                            <div class="all_menuCt">
-                                <a href="#">GLOBAL</a>
-                                <div class="arrow"></div>
-                                <ul class="language">
-                                    <li>
-                                        <h3>LANGUAGE</h3>
+                            <div id="menu">
+                                <ul>
+                                    <li class="menu_fl">
+                                        <h2><a href="#">개인</a></h2>
+                                        <div class="clear"></div>
+                                        <div class="arrow"></div>
+                                        <ul class="menu_list">
+                                            <li class="m_1"><a href="#">개인뱅킹</a></li>
+                                            <li><a href="#">조회</a></li>
+                                            <li><a href="#">이체</a></li>
+                                            <li><a href="#">오픈뱅킹</a></li>
+                                            <li><a href="#">공과금</a></li>
+                                            <li><a href="#">예금/신탁</a></li>
+                                            <li><a href="#">펀드</a></li>
+                                            <li><a href="#">보험</a></li>
+                                            <li><a href="#">대출</a></li>
+                                            <li><a href="#">외환/골드</a></li>
+                                            <li><a href="#">퇴직연금</a></li>
+                                            <li><a href="#">뱅킹관리</a></li>
+                                            <li><a href="#">ISA</a></li>
+
+                                        </ul>
                                     </li>
-                                    <li class="line"></li>
-                                    <li class="clear"></li>
-                                    <li><img src="images/all_svc_flag_us.gif" alt="flag_us"><a href="#">English</a></li>
-                                    <li><img src="images/all_svc_flag_china.gif" alt="flag_china"><a href="#">Chinese (中國語)</a></li>
-                                    <li><img src="images/all_svc_flag_japan.gif" alt="flag_japan"><a href="#">Japanese (日本語)</a></li>
-                                    <li><img src="images/all_svc_flag_philippines.gif" alt="flag_philippines"><a href="#">Filipino (Tagalog)</a></li>
-                                    <li><img src="images/all_svc_flag_vietnam.gif" alt="flag_vietnam"><a href="#">Vietnamese (tiếng Việt)</a></li>
-                                    <li>
-                                        <img src="images/all_svc_flag_mongolia.gif" alt="flag_mongolia"><a href="#">Mongolian (Монгол хэл)</a>
-                                        <p></p>
+                                    <li class="menu_fl">
+                                        <h2><a href="#">기업</a></h2>
+                                        <div class="arrow"></div>
+                                        <div class="clear"></div>
+                                        <ul class="menu_list">
+                                            <li class="m_1"><a href="#">개인뱅킹</a></li>
+                                            <li><a href="#">조회</a></li>
+                                            <li><a href="#">이체</a></li>
+                                            <li><a href="#">공과금</a></li>
+                                            <li><a href="#">전자결제</a></li>
+                                            <li><a href="#">수표어음</a></li>
+                                            <li><a href="#">자금관리</a></li>
+                                            <li><a href="#">예금/신탁</a></li>
+                                            <li><a href="#">대출</a></li>
+                                            <li><a href="#">펀드/보험</a></li>
+                                            <li><a href="#">외환</a></li>
+                                            <li><a href="#">퇴직연금</a></li>
+                                            <li><a href="#">뱅킹관리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_fl">
+                                        <h2><a href="#">자산관리</a></h2>
+                                        <div class="arrow"></div>
+                                        <div class="clear"></div>
+                                        <ul class="menu_list">
+                                            <li class="m_1"><a href="#">자산관리</a></li>
+                                            <li><a href="#">로보/전문가설계</a></li>
+                                            <li><a href="#">펀드마켓</a></li>
+                                            <li><a href="#">은퇴설계</a></li>
+                                            <li><a href="#">재무설계</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_fl">
+                                        <h2><a href="#">금융상품</a></h2>
+                                        <div class="arrow"></div>
+                                        <div class="clear"></div>
+                                        <ul class="menu_list">
+                                            <li class="m_1"><a href="#">금융상품</a></li>
+                                            <li><a href="#">추천상품</a></li>
+                                            <li><a href="#">예금</a></li>
+                                            <li><a href="#">펀드</a></li>
+                                            <li><a href="#">대출</a></li>
+                                            <li><a href="#">외환</a></li>
+                                            <li><a href="#">골드</a></li>
+                                            <li><a href="#">신탁</a></li>
+                                            <li><a href="#">보험</a></li>
+                                            <li><a href="#">퇴직연금</a></li>
+                                            <li><a href="#">시니어플러스 은퇴설계</a></li>
+                                            <li><a href="#">ISA</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_fl">
+                                        <h2><a href="#">카드</a></h2>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div id="top_search">
-                            <a href="#">찾기</a>
+                            <div id="all_menu">
+                                <a href="#">전체메뉴</a>
+                                <div class="all_menuCt">
+                                    <a href="#">GLOBAL</a>
+                                    <div class="arrow"></div>
+                                    <ul class="language">
+                                        <li>
+                                            <h3>LANGUAGE</h3>
+                                        </li>
+                                        <li class="line"></li>
+                                        <li class="clear"></li>
+                                        <li><img src="images/all_svc_flag_us.gif" alt="flag_us"><a href="#">English</a></li>
+                                        <li><img src="images/all_svc_flag_china.gif" alt="flag_china"><a href="#">Chinese (中國語)</a></li>
+                                        <li><img src="images/all_svc_flag_japan.gif" alt="flag_japan"><a href="#">Japanese (日本語)</a></li>
+                                        <li><img src="images/all_svc_flag_philippines.gif" alt="flag_philippines"><a href="#">Filipino (Tagalog)</a></li>
+                                        <li><img src="images/all_svc_flag_vietnam.gif" alt="flag_vietnam"><a href="#">Vietnamese (tiếng Việt)</a></li>
+                                        <li>
+                                            <img src="images/all_svc_flag_mongolia.gif" alt="flag_mongolia"><a href="#">Mongolian (Монгол хэл)</a>
+                                            <p></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="top_search">
+                                <a href="#">찾기</a>
+                            </div>
                         </div>
                     </div>
                     <!-- <div class="mid_btn">
@@ -528,25 +545,10 @@
             </div>
         </footer>
         </div>
-        <!-- 스크립트 -->
-        <script>
-            var main_banner = new Swiper('.swiper-container.main_banner', {
-                slidesPerView: 1,
-                centeredSlides: false,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
+
+        <a href="#top" class="go-top" title="Back to Top">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </a>
 </body>
 
 </html>
